@@ -1,4 +1,4 @@
-let inp=document.getElementById("screen");
+let inpu=document.getElementById("screen");
 buttons =document.querySelectorAll("button");
 let newinput="";
 for(items of buttons ){
@@ -8,21 +8,21 @@ for(items of buttons ){
         {
             buttontext='*';
             newinput+=buttontext;
-            inp.value=newinput;
+            inpu.value=newinput;
         }
         else if(buttontext=='C')
         {
-            inp.value='';
+            inpu.value='';
             newinput='';
 
         }
         else if(buttontext=='=')
         {          
-             inp.value=eval(inp.value);
+             inp.value=eval(inpu.value);
         }
         else{
             newinput+=buttontext;
-            inp.value=newinput;
+            inpu.value=newinput;
         }
 
 
