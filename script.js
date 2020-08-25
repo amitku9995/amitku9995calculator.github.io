@@ -18,7 +18,7 @@ for(items of buttons ){
         }
         else if(buttontext=='=')
         {          
-             inp.value=eval(inpu.value);
+             inpu.value=eval(inpu.value);
         }
         else{
             newinput+=buttontext;
